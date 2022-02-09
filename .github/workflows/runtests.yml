@@ -149,6 +149,7 @@ jobs:
       - run: pip install mpmath gmpy2 matplotlib numpy scipy aesara ipython \
                          symengine cython llvmlite wurlitzer \
                          autowrap numexpr 'antlr4-python3-runtime==4.7.*'
+      - run: pip install numba
       # Test external imports
       - run: bin/test_external_imports.py
       - run: bin/test_submodule_imports.py
